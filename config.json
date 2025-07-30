@@ -88,6 +88,54 @@
     "didiziyuan":{
       "api":"https://api.ddapi.cc/api.php/provide/vod",
       "name":"滴滴资源"
+    },
+    "laosebi":{
+      "api":"https://apilsbzy1.com/api.php/provide/vod",
+      "name":"老色逼"
+    },
+    "huangguaziyuan":{
+      "api":"https://www.avre06.com/api.php/provide/vod",
+      "name":"黄瓜资源"
+    },
+    "aosika":{
+      "api":"https://aosikazy.com/api.php/provide/vod",
+      "name":"奥斯卡资源"
+    },
+    "jingpinx":{
+      "api":"https://www.jingpinx.com/api.php/provide/vod",
+      "name":"精品x"
+    },
+    "shayuziyuan":{
+      "api":"https://shayuapi.com/api.php/provide/vod",
+      "name":"鲨鱼资源"
+    },
+    "lajiaoziyuan":{
+      "api":"https://apilj.com/api.php/provide/vod",
+      "name":"辣椒资源"
+    },
+    "senlinziyuan":{
+      "api":"https://slapibf.com/api.php/provide/vod",
+      "name":"森林资源"
+    },
+    "yiwuwuziyuan":{
+      "api":"https://155api.com/api.php/provide/vod",
+      "name":"155资源"
+    },
+    "caoliuzyw":{
+      "api":"https://www.caoliuzyw.com/api.php/provide/vod",
+      "name":"草榴资源"
+    },
+    "semaozy":{
+      "api":"https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod",
+      "name":"色猫资源"
+    },
+    "thzy1":{
+      "api":"https://thzy1.me/api.php/provide/vod",
+      "name":"桃花资源"
+    },
+    "apiyutu":{
+      "api":"https://apiyutu.com/api.php/provide/vod",
+      "name":"玉兔资源"
     }
   }
 }
