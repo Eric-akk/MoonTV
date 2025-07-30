@@ -136,6 +136,10 @@
     "apiyutu":{
       "api":"https://apiyutu.com/api.php/provide/vod",
       "name":"玉兔资源"
+    },
+    "naixxzy":{
+      "api":"https://naixxzy.com/api.php/provide/vod",
+      "name":"奶香香资源"
     }
   }
 }
