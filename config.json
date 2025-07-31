@@ -141,5 +141,12 @@
       "api":"https://naixxzy.com/api.php/provide/vod",
       "name":"奶香香资源"
     }
-  }
+  },
+  "custom_category": [
+    {
+      "name": "18+",
+      "type": "18+",
+      "query": "黑料事件"
+    }
+  ]
 }
