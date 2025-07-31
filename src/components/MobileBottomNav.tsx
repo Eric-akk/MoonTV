@@ -42,23 +42,20 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
 
   useEffect(() => {
     const runtimeConfig = (window as any).RUNTIME_CONFIG;
-    if (runtimeConfig?.CUSTOM_CATEGORIES) {
+    if (runtimeConfig?.CUSTOM_CATEGORIES?.length > 0) {
       setNavItems((prevItems) => [
         ...prevItems,
-        ...runtimeConfig.CUSTOM_CATEGORIES.map((category: any) => ({
+        {
           icon: Star,
-          label: category.name || category.query,
-          href: `/douban?type=${category.type}&tag=${category.query}${
-            category.name ? `&name=${category.name}` : ''
-          }&custom=true`,
-        })),
+          label: '自定义',
+          href: '/douban?type=custom',
+        },
       ]);
     }
   }, []);
 
   const isActive = (href: string) => {
     const typeMatch = href.match(/type=([^&]+)/)?.[1];
-    const tagMatch = href.match(/tag=([^&]+)/)?.[1];
 
     // 解码URL以进行正确的比较
     const decodedActive = decodeURIComponent(currentActive);
@@ -67,9 +64,7 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
     return (
       decodedActive === decodedItemHref ||
       (decodedActive.startsWith('/douban') &&
-        decodedActive.includes(`type=${typeMatch}`) &&
-        tagMatch &&
-        decodedActive.includes(`tag=${tagMatch}`))
+        decodedActive.includes(`type=${typeMatch}`))
     );
   };
 
@@ -87,7 +82,11 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
         {navItems.map((item) => {
           const active = isActive(item.href);
           return (
-            <li key={item.href} className='flex-shrink-0 w-20 min-w-20'>
+            <li
+              key={item.href}
+              className='flex-shrink-0'
+              style={{ width: '20vw', minWidth: '20vw' }}
+            >
               <Link
                 href={item.href}
                 className='flex flex-col items-center justify-center w-full h-14 gap-1 text-xs'
